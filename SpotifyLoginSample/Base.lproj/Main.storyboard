@@ -15,6 +15,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="NFa-TH-ICZ">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        </navigationBarAppearance>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        </navigationBarAppearance>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1RN-nK-why">
                         <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +33,7 @@
             </objects>
             <point key="canvasLocation" x="-287" y="188"/>
         </scene>
-        <!--asdasdasd-->
+        <!--메인화면-->
         <scene sceneID="GX2-Qe-mgB">
             <objects>
                 <viewController id="kyd-dV-4rt" customClass="LoginViewController" customModule="SpotifyLoginSample" customModuleProvider="target" sceneMemberID="viewController">
@@ -127,7 +133,7 @@
                             <constraint firstItem="ArR-sB-dMw" firstAttribute="centerX" secondItem="wvR-dj-OEj" secondAttribute="centerX" id="uFs-G5-SkG"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="asdasdasd" id="GPu-4W-g02"/>
+                    <navigationItem key="navigationItem" title="메인화면" id="GPu-4W-g02"/>
                     <connections>
                         <outlet property="appleLoginButton" destination="10s-po-ddv" id="3ll-em-Usp"/>
                         <outlet property="emailLoginButton" destination="nId-hB-mvX" id="Atv-jx-e9m"/>

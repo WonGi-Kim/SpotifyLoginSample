@@ -26,6 +26,7 @@ class LoginViewController: UIViewController {
             $0?.layer.borderColor = UIColor.white.cgColor
             $0?.layer.cornerRadius = 30
         })
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -36,6 +37,7 @@ class LoginViewController: UIViewController {
         
         // Google Sign In 트릿 생성
         // GIDSignIn.sharedInstance.presentingViewController = self
+        
     }
     
     @IBAction func tapGoogleLoginButton(_ sender: UIButton) {
@@ -61,13 +63,13 @@ class LoginViewController: UIViewController {
     @IBAction func tapAppleLoginButton(_ sender: UIButton) {
     }
     
-    /*func navigationBarAppearance() {
+    func navigationBarAppearance() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = UIColor.tintColor
+        appearance.backgroundColor = UIColor.systemIndigo
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }*/
+    }
     
     // Main 화면으로 보내기
     private func showMainViewController() {
