@@ -31,6 +31,7 @@ class MainViewController: UIViewController {
         
         navigationController?.navigationBar.isHidden = true
         
+        // 현재 로그인된 사용자 이메일 표시
         let email = Auth.auth().currentUser?.email ?? "고객"
         
         welcomeLabel.text = """
@@ -38,6 +39,7 @@ class MainViewController: UIViewController {
         \(email)님
         """
         
+        // 이메일 패스워드를 통해 로그인 한 경우에만 비밀번호 초기화 버튼 표시
         let isEmailSignIn = Auth.auth().currentUser?.providerData[0].providerID == "password"
         passwordResetButton.isHidden = !isEmailSignIn
     }
@@ -55,6 +57,7 @@ class MainViewController: UIViewController {
     }
     
     @IBAction func tapPasswordResetButton(_ sender: UIButton) {
+        // 현재 로그인 된 사용자의 이메일로 비밀번호 초기화 이메일 전송
         let email = Auth.auth().currentUser?.email ?? ""
         Auth.auth().sendPasswordReset(withEmail: email, completion: nil)
         
